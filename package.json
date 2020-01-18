@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "pbf": "pbf ./proto/place.proto > ./proto/place.js"
+  },
+  "dependencies": {
+    "JSONStream": "^1.3.5",
+    "event-stream": "^4.0.1",
+    "for-each-line": "^1.0.0",
+    "ngraph.random": "^1.0.0",
+    "node-fetch": "^2.6.0",
+    "pbf": "^3.2.1",
+    "request": "^2.88.0"
+  }
+}

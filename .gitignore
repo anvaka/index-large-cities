@@ -1,0 +1,17 @@
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+online/npmrank.json
+pids
+logs
+results
+backup
+
+npm-debug.log
+node_modules
