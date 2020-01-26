@@ -13,13 +13,9 @@ let executeOSMQuery = require('./lib/executeOSMQuery')
 var JSONStream = require('JSONStream')
 var es = require('event-stream')
 
-readErroredFile(outFileName, crawl);
+// readErroredFile(outFileName, crawl);
 
-// function readErrors(seen) {
-//   readProcessedFile(outFileName, function (errors) {
-//
-//   });
-// }
+readProcessedFile(outFileName, crawl);
 
 function crawl(seen) {
   forEachLine(process.argv[2] || 'cities.txt', line => {

@@ -264,7 +264,8 @@ Awasa	 Ethiopia
 Ayacucho	 Peru
 Aydın	 Turkey
 Azamgarh	 India
-Azua	 Dominican RepublicKabankalan	 Philippines
+Azua	 Dominican Republic
+Kabankalan	 Philippines
 Babol	 Iran
 Babruysk	 Belarus
 Bacabal	 Brazil
