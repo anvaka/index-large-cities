@@ -13,13 +13,9 @@ let executeOSMQuery = require('./lib/executeOSMQuery')
 var JSONStream = require('JSONStream')
 var es = require('event-stream')
 
-readErroredFile(outFileName, crawl);
+// readErroredFile(outFileName, crawl);
 
-// function readErrors(seen) {
-//   readProcessedFile(outFileName, function (errors) {
-//
-//   });
-// }
+readProcessedFile(outFileName, crawl);
 
 function crawl(seen) {
   forEachLine(process.argv[2] || 'cities.txt', line => {
@@ -84,11 +80,11 @@ function downloadAll() {
   }
 
 function getQuery(areaId) {
-    return `[timeout:9000][maxsize:2000000000][out:json];
+    return `[timeout:900][out:json];
 area(${areaId});
 (._; )->.area;
 (
-way["highway"](area.area);
+way[highway~"^(((motorway|trunk|primary|secondary|tertiary)(_link)?)|unclassified|residential|living_street|service|track)$"](area.area);
 node(w);
 );
 out skel;`;

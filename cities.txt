@@ -1,4 +1,5 @@
 A Coruña	 Spain
+Metro Vancouver
 Aachen	 Germany
 Aalborg	 Denmark
 Aarhus	 Denmark
@@ -264,7 +265,8 @@ Awasa	 Ethiopia
 Ayacucho	 Peru
 Aydın	 Turkey
 Azamgarh	 India
-Azua	 Dominican RepublicKabankalan	 Philippines
+Azua	 Dominican Republic
+Kabankalan	 Philippines
 Babol	 Iran
 Babruysk	 Belarus
 Bacabal	 Brazil
@@ -1050,7 +1052,7 @@ Dujail	 Iraq
 Dujiangyan City	 China
 Dum Dum	 India
 Dumaguete	 Philippines
-Dundee	 United Kingdom
+Dundee City	 United Kingdom
 Dunedin	 New Zealand
 Dunhua	 China
 Dunhuang	 China
@@ -1361,7 +1363,7 @@ Ebina	 Japan
 Ecatepec	 Mexico
 Ede, Gelderland	 Netherlands
 Ede, Osun	 Nigeria
-Edinburgh	 United Kingdom
+City of Edinburgh	 United Kingdom
 Edirne	 Turkey
 Edmonton	 Canada
 Eindhoven	 Netherlands
@@ -1560,7 +1562,7 @@ Giridih	 India
 Giugliano in Campania	 Italy
 Giza	 Egypt
 Glan	 Philippines
-Glasgow	 United Kingdom
+Glasgow City	 United Kingdom
 Glendale, Arizona	 United States
 Glendale, California	 United States
 Gliwice	 Poland
