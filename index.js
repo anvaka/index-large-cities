@@ -80,11 +80,11 @@ function downloadAll() {
   }
 
 function getQuery(areaId) {
-    return `[timeout:9000][maxsize:2000000000][out:json];
+    return `[timeout:900][out:json];
 area(${areaId});
 (._; )->.area;
 (
-way["highway"](area.area);
+way[highway~"^(((motorway|trunk|primary|secondary|tertiary)(_link)?)|unclassified|residential|living_street|service|track)$"](area.area);
 node(w);
 );
 out skel;`;
