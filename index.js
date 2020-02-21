@@ -73,6 +73,10 @@ function downloadAll() {
   }
 
   function saveResults(elements, place) {
+    if (!elements || !elements.length) {
+      markProcessed(place);
+      return;
+    }
     let buffer = toProtobuf(elements, place.name, place.areaId);
     let fileName = path.join(__dirname, 'data', place.areaId + '.pbf');
     fs.writeFileSync(fileName, buffer);
