@@ -88,7 +88,7 @@ function getQuery(areaId) {
 area(${areaId});
 (._; )->.area;
 (
-way[highway~"^(((motorway|trunk|primary|secondary|tertiary)(_link)?)|unclassified|residential|living_street|service|track)$"](area.area);
+way["highway"](area.area);
 node(w);
 );
 out skel;`;
