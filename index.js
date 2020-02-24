@@ -13,7 +13,7 @@ let executeOSMQuery = require('./lib/executeOSMQuery')
 var JSONStream = require('JSONStream')
 var es = require('event-stream')
 
-// readErroredFile(outFileName, crawl);
+// readErroredFile(outFileName, crawl); 
 
 readProcessedFile(outFileName, crawl);
 
