@@ -13,7 +13,6 @@ let executeOSMQuery = require('./lib/executeOSMQuery')
 var JSONStream = require('JSONStream')
 var es = require('event-stream')
 
-
 // readErroredFile(outFileName, crawl); 
 
 readProcessedFile(outFileName, crawl);
@@ -140,3 +139,4 @@ function readProcessedFile(fileName, done) {
     done(seen);
   }
 }
+// this change is to trigger gh-pages rebuild
