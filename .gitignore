@@ -12,6 +12,7 @@ pids
 logs
 results
 backup
+data-small
 
 npm-debug.log
 node_modules

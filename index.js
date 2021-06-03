@@ -4,12 +4,13 @@ let forEachLine = require('for-each-line');
 let randomAPI = require('ngraph.random');
 let toProtobuf = require('./lib/toProtobuf');
 let path = require('path')
-let outFileName = path.join(__dirname, 'data', 'processed.json');
-let outErrorsFileName = path.join(__dirname, 'data', 'errors.json');
 let outgoing;
 let outErrors;
 let queue = [];
 let executeOSMQuery = require('./lib/executeOSMQuery')
+let outFolderName = 'data-small';
+let outFileName = path.join(__dirname, outFolderName, 'processed.json');
+let outErrorsFileName = path.join(__dirname, outFolderName, 'errors.json');
 var JSONStream = require('JSONStream')
 var es = require('event-stream')
 
@@ -74,12 +75,15 @@ function downloadAll() {
 
   function saveResults(elements, place) {
     let buffer = toProtobuf(elements, place.name, place.areaId);
-    let fileName = path.join(__dirname, 'data', place.areaId + '.pbf');
+    let fileName = path.join(__dirname, outFolderName, place.areaId + '.pbf');
     fs.writeFileSync(fileName, buffer);
     markProcessed(place);
   }
 
 function getQuery(areaId) {
+  
+// way[highway~"^(motorway|primary|secondary|tertiary)|residential"](area.area);
+// way["highway"](area.area);
     return `[timeout:900][out:json];
 area(${areaId});
 (._; )->.area;

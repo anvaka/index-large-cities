@@ -7,8 +7,12 @@
     "event-stream": "^4.0.1",
     "for-each-line": "^1.0.0",
     "ngraph.random": "^1.0.0",
+    "ngraph.weisfeiler-lehman": "^1.0.0",
     "node-fetch": "^2.6.0",
     "pbf": "^3.2.1",
     "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "ngraph.graph": "^19.1.0"
   }
 }
