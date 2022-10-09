@@ -8,7 +8,7 @@ let outgoing;
 let outErrors;
 let queue = [];
 let executeOSMQuery = require('./lib/executeOSMQuery')
-let outFolderName = 'data-small';
+let outFolderName = 'data';
 let outFileName = path.join(__dirname, outFolderName, 'processed.json');
 let outErrorsFileName = path.join(__dirname, outFolderName, 'errors.json');
 var JSONStream = require('JSONStream')
